@@ -1,0 +1,92 @@
+.RioNotifications {
+  .IconWapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    svg {
+      height: 30px;
+      width: 30px;
+      fill: var(--gray);
+    }
+    &::after {
+      content: "";
+      display: flex;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--rio-primary);
+      position: absolute;
+      right: -4px;
+      top: -4px;
+    }
+  }
+}
+
+.InvitationsList {
+  display: grid;
+  gap: 8px;
+
+  .InvitationCard {
+    color: var(--white);
+    gap: 24px;
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    background: var(--rio-submenu-active);
+    padding: 22px;
+
+    .TeamAndOwnerPicture {
+      width: 65px;
+      height: 65px;
+      position: relative;
+
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .TeamProfilePicture {
+        width: 100%;
+        max-height: 100%;
+      }
+
+      .OwnerProfilePicture {
+        width: 30px;
+        height: auto;
+        right: -8px;
+        bottom: -8px;
+        position: absolute;
+      }
+    }
+
+    .InvitationDesc {
+      font-size: 16px;
+      color: var(--white);
+      font-weight: var(--font-bold);
+
+      > * {
+        font-size: 16px;
+      }
+    }
+
+    .InvitationDate {
+      margin-top: 12px;
+      font-size: 14px;
+      color: var(--gray);
+      font-weight: var(--font-medium);
+    }
+
+    .Actions {
+      margin-top: 12px;
+
+      .RioButton {
+        min-height: 40px;
+
+        &:last-child {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}

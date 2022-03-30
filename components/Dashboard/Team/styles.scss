@@ -1,0 +1,69 @@
+.TeamPage {
+  .TeamPageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .TeamPropertyRow {
+      margin-bottom: 50px;
+      width: 100%;
+
+      &:first-child {
+        margin-top: 12px;
+      }
+
+      .TeamPropertyName {
+        font-size: 14px;
+        color: var(--gray);
+        font-weight: var(--font-bold);
+        margin-bottom: 14px;
+      }
+
+      .TeamPropertyContent {
+        display: flex;
+        align-items: center;
+
+        .FindUserInput {
+          min-width: 350px;
+        }
+
+        .InvitePeopleToTeam {
+          margin-left: 50px;
+          min-height: 56px;
+        }
+
+        .LeaveTeamButton {
+          margin-top: 8px;
+
+          .LeaveTeamIconWrapper {
+            display: flex;
+            align-items: center;
+            font-weight: var(--font-semi-bold);
+
+            svg {
+              margin-left: 0px;
+              margin-right: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.CreateTeamModal {
+  .rio-modal-body {
+    padding-top: 0px;
+  }
+  .CreateTeamForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 320px;
+    .CreateTeamButton {
+      margin-top: 32px;
+      min-width: 240px;
+    }
+  }
+}
